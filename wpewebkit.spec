@@ -31,6 +31,7 @@ BuildRequires: gstreamer1-devel
 BuildRequires: gstreamer1-plugins-bad-free-devel
 BuildRequires: gstreamer1-plugins-base-devel
 BuildRequires: harfbuzz-devel
+BuildRequires: hyphen-devel
 BuildRequires: pkgconfig(gobject-introspection-1.0)
 BuildRequires: libatomic
 BuildRequires: libepoxy-devel
