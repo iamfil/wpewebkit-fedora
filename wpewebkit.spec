@@ -8,7 +8,7 @@ cp -p %1 _license_files/$(echo '%1' | sed -e 's!/!.!g')
 %global toolchain clang
 
 Name:           wpewebkit
-Version:        2.52.4
+Version:        2.53.3
 Release:        %autorelease
 Summary:        A WebKit port optimized for low-end devices
 
@@ -74,6 +74,7 @@ BuildRequires: libseccomp-devel
 BuildRequires: xdg-dbus-proxy
 BuildRequires: lcms2-devel
 BuildRequires: mold
+BuildRequires: enchant2-devel
 
 BuildRequires: pkgconfig(libavif)
 BuildRequires: pkgconfig(libdrm)
@@ -182,7 +183,6 @@ export NINJA_STATUS="[%f/%t][%e] "
 %add_to_license_files Source/ThirdParty/ANGLE/third_party/proguard/LICENSE
 %add_to_license_files Source/ThirdParty/ANGLE/third_party/flatbuffers/LICENSE
 %add_to_license_files Source/ThirdParty/ANGLE/third_party/turbine/LICENSE
-%add_to_license_files Source/ThirdParty/ANGLE/third_party/bazel/LICENSE
 
 %files
 %{_bindir}/WPEWebDriver
